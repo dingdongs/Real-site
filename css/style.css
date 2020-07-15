@@ -1,0 +1,146 @@
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+body {
+  height: 100vh;
+  background-color: teal;
+  padding: 10px;
+  position: relative;
+  width: 100vw;
+}
+
+.desktop_icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.desktop_icons .icon_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 90px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.desktop_icons .icon_container p {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.windows {
+  display: none;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  font-smoothing: never;
+  -webkit-font-smoothing: none;
+  background-color: #c6c6c6;
+  border-top: 2px solid #efefef;
+  border-left: 2px solid #efefef;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  max-height: calc(70vh);
+  position: absolute;
+  top: 10px;
+  z-index: 99;
+  /* right: 0; */
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  width: calc(100% - 20px);
+  max-width: 800px;
+  height: fit-content;
+}
+.windows .windows-header {
+  position: relative;
+  color: #fff;
+  padding: 0.25em 0.25em 0.25em 0.75em;
+  line-height: 1.4;
+  border-top: 1px solid silver;
+  border-left: 1px solid silver;
+  border-right: 2px solid silver;
+  border-bottom: 1px solid silver;
+  background: navy;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  cursor: move;
+}
+.windows .windows-button {
+  display: block;
+  -moz-appearance: none;
+  appearance: none;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  border-left: 2px solid #ededed;
+  border-top: 2px solid #ededed;
+  border-right: 2px solid #404040;
+  border-bottom: 2px solid #404040;
+  color: #000;
+  background-color: silver;
+  position: relative;
+  outline: none;
+  z-index: 10;
+}
+.windows .windows-header .windows-button {
+  height: 23px;
+  width: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.windows .windows-header .windows-button img {
+  width: 13px;
+}
+.windows .windows-button:active {
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  border-right: 2px solid #efefef;
+  border-bottom: 2px solid #efefef;
+}
+.windows .windows-body {
+  padding: 5px;
+  background: #fff;
+  margin: 1px;
+  margin-top: 4px;
+  border-left: 2px solid #404040;
+  border-top: 2px solid #404040;
+  border-right: 2px solid #f4f4f4;
+  border-bottom: 2px solid #f4f4f4;
+  background: #fff;
+}
+.windows .windows-body .body-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.windows .windows-body .body-flex {
+}
+.windows .windows-body .body-flex .image {
+  flex: 0 calc(33.33% - 5px);
+}
+.windows .windows-body .body-flex .image img {
+  width: 100%;
+}
+
+#popup3 {
+  bottom: 10px;
+  top: auto;
+  display: block;
+  z-index: 97;
+}
+
+.video-container {
+  padding-bottom: 56%;
+  position: relative;
+}
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
