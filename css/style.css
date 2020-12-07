@@ -43,7 +43,7 @@ body {
   border-left: 2px solid #efefef;
   border-right: 2px solid #000;
   border-bottom: 2px solid #000;
-  /*max-height: calc(70vh);*/
+  max-height: calc(70vh);
   position: absolute;
   top: 10px;
   z-index: 99;
@@ -52,7 +52,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%); */
   width: calc(100% - 20px);
-  max-width: 675px;
+  max-width: 800px;
   height: fit-content;
 }
 .windows .windows-header {
@@ -104,10 +104,10 @@ body {
   border-bottom: 2px solid #efefef;
 }
 .windows .windows-body {
-  /*padding: 5px;*/
+  padding: 0px;
   background: #fff;
-  /*margin: 1px;
-  margin-top: 4px;*/
+  margin: 1px;
+  margin-top: 4px;
   border-left: 2px solid #404040;
   border-top: 2px solid #404040;
   border-right: 2px solid #f4f4f4;
@@ -124,7 +124,7 @@ body {
   flex: 0 calc(33.33% - 5px);
 }
 .windows .windows-body .body-flex .image img {
-  width: 80%;
+  width: 100%;
 }
 
 #popup3 {
