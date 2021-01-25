@@ -1,33 +1,89 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>PinDodge2D</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="desktop_icons">
+      <div class="icon_container" data-id="1">
+        <img src="./images/directory.png" alt="" />
+        <p>Games</p>
+      </div>
+      <div class="icon_container" data-id="2">
+        <img src="./images/modem.png" alt="" />
+        <p>Call Dan</p>
+      </div>
+    </div>
 
-<meta name="generator" content="Construct 3">
+    <div class="windows" id="popup1">
+      <div class="windows-header">
+        <p>Ding Dong Games</p>
+        <div class="windows-button-group">
+          <button class="windows-button" id="windows-close">
+            <img src="./images/close-icon.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="windows-body">
+       
+          <div class="video-container">
+               <iframe
+            width="100%"
+            height="400"
+            src="./EFTM/index.html"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            autoplay
+          ></iframe>
+        </div>
+      </div>
+    </div>
 
-	<link rel="manifest" href="appmanifest.json">
-	<link rel="apple-touch-icon" sizes="128x128" href="icons/icon-128.png">
-	<link rel="apple-touch-icon" sizes="256x256" href="icons/icon-256.png">
-	<link rel="apple-touch-icon" sizes="512x512" href="icons/icon-512.png">
-	<link rel="icon" type="image/png" href="icons/icon-512.png">
+    <div class="windows" id="popup2">
+      <div class="windows-header">
+        <p>Calling Dan...</p>
+        <div class="windows-button-group">
+          <button class="windows-button" id="windows-close">
+            <img src="./images/close-icon.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="windows-body">
+        <div class="video-container">
+          <iframe
+            width="100%"
+            height="400"
+            src="https://www.youtube.com/embed/rBUFoTT6h48"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            autoplay
+          ></iframe>
+        </div>
+      </div>
+    </div>
 
-<link rel="stylesheet" href="style.css">
+    <div class="windows" id="popup3">
+      <div class="windows-header">
+        <p>Dingdong's Mainframe CPU</p>
+        <div class="windows-button-group">
+          <button class="windows-button" id="windows-close">
+            <img src="./images/close-icon.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="windows-body">
+        <p>
+         Dingdong Games WINS Game Company of The Year! Schools are closed to celebrate.  -Daniel
+        </p>
+      </div>
+    </div>
 
-</head>
-<body>
-<div id="fb-root"></div>
-
-	<noscript>
-		<div id="notSupportedWrap">
-			<h2 id="notSupportedTitle">This content requires JavaScript</h2>
-			<p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
-		</div>
-	</noscript>
-	<script src="scripts/supportcheck.js"></script>
-	<script src="scripts/offlineclient.js"></script>
-	<script src="scripts/main.js"></script>
-	<script src="scripts/register-sw.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
 </html>
